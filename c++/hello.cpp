@@ -3,7 +3,6 @@
 using namespace std;
 
 
-
 class DataStructure{
   public:
     stack<int> s;
@@ -11,6 +10,9 @@ class DataStructure{
     priority_queue<int> pq;
     vector<int> v;
     pair<int,int> p = make_pair(0,10);
+
+    // dynamic memory allocation
+    int *p = new int(25);
 
     
 
@@ -80,7 +82,6 @@ int main()
 
   ds.v[1] = 200;
 
-  
   cout<<ds.v[1]<<endl;
   cout<<ds.p.first<<endl;
   cout<<ds.p.second<<endl;
